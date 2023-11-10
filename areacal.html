@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area-calcuator-by-YHA</title>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .result{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div>
+        <h1>//Pritical </h1>        
+        <p>
+            //area တွက်တဲ့ fun လေးတစ်ခုတည်ေဆာက်ပါမယ်။ width and breadth ယူပါမယ် area ကိုတွက်ပါမယ်။ အဖြေကို square feet နဲ့ထုတ်ေပးပါမယ်။
+            // တွက်ချက်မှု w,b,result တေွကိုမှတ်တမ်းအဖြစ်သိမ်းထားပါမယ်။
+            </p>
+    </div> -->
+
+    <div >
+        <h1>Area Calculator</h1>
+        <div class="flex">
+
+            <p class=" result">
+                Result :
+                <span id="output">...............</span>
+            </p>
+            <button id="storeBtn" onclick="store()">Stor</button>
+            <button id="clearBtn" onclick="clearInput()">Clear</button>
+        </div>
+        <div class="caculato">
+            <input type="number" placeholder="width" id="width">
+            <input type="number" placeholder="breadth" id="breadth">
+            <button id="calcBtn" onclick="clculate()">Calculate</button>
+        </div>
+        <ul id="lists"><li>15 ft * 50 ft = 750 sqft</li></ul>
+    </div>
+    <div>
+
+    </div>
+
+    <script src="./js/area.js"></script>
+    
+</body>
+</html>
